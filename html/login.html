@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - E-commerce Store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    <!-- Header (Same as Home Page) -->
+    <header>
+      <div class="logo">
+        <a href="../home.html"
+          ><img src="../imgs/home/logo.png" alt="E-commerce Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../home.html">Home</a></li>
+        </ul>
+      </nav>
+      <div></div>
+    </header>
+
+    <!-- Login Form -->
+    <section class="login-form"  data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="register.html">Register here</a>.</p>
+    </section>
+
+    <!-- Footer (Same as Home Page) -->
+    <footer>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="../imgs/home/face.png" alt="Facebook" /></a>
+        <a href="#"><img src="../imgs/home/twitter.avif" alt="Twitter" /></a>
+        <a href="#"><img src="../imgs/home/insta.jpg" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2025 E-commerce Abdallah Ali Store. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- JavaScript -->
+    <script src="../js/login.js" type="module"></script>
+  </body>
+</html>

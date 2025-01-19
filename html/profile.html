@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - E-commerce Store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+    <!-- SweetAlert CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header (Same as Home Page) -->
+    <header>
+      <div class="logo">
+        <a href="../home.html"
+          ><img src="../imgs/home/logo.png" alt="E-commerce Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li id="Dashboard"><a href="#">Dashboard</a></li>
+          <li id="loginLink"><a href="./login.html">Login</a></li>
+          <li id="registerLink"><a href="./register.html">Register</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="search_input" placeholder="Search products..." />
+        <button id="btn_search">Search</button>
+      </div>
+      <div class="user-actions">
+        <a href="./wishList.html" id="wishList">
+          <img src="../imgs/home/wish.png" alt="wishList"
+        /></a>
+        <a href="./carts.html" id="cartCount"
+          ><img src="../imgs/home/carts1.png" alt="Cart"
+        /></a>
+        <!-- User profile section -->
+        <div id="userProfile">
+          <a href="#"><img src="../imgs/home/profile.png" alt="Profile" /></a>
+          <span id="userName"></span>
+        </div>
+        <!-- Logout button -->
+        <button id="logoutButton" style="display: none">Logout</button>
+      </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section
+      class="profile"
+      data-aos="flip-right"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1500"
+    >
+      <h2>Your Profile</h2>
+      <div class="profile-details">
+        <img
+          id="profileImage"
+          src=""
+          alt="Profile Image"
+          data-aos="zoom-out-right"
+        />
+        <input
+          data-aos="zoom-out-left"
+          data-aos-duration="2500"
+          type="file"
+          id="imageUpload"
+          accept="image/*"
+          style="display: none"
+        />
+        <button
+          id="changePictureBtn"
+          data-aos="zoom-out-right"
+          data-aos-duration="2500"
+        >
+          Change Picture
+        </button>
+        <h3 id="profileName"></h3>
+        <p id="profileEmail"></p>
+        <p id="profileRole"></p>
+        <button
+          id="editProfileBtn"
+          data-aos="zoom-out-left"
+          data-aos-duration="2500"
+        >
+          Edit Profile
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer (Same as Home Page) -->
+    <footer>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="../imgs/home/face.png" alt="Facebook" /></a>
+        <a href="#"><img src="../imgs/home/twitter.avif" alt="Twitter" /></a>
+        <a href="#"><img src="../imgs/home/insta.jpg" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2025 E-commerce Abdallah Ali Store. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JavaScript -->
+    <script src="../js/profile.js" type="module" defer></script>
+  </body>
+</html>

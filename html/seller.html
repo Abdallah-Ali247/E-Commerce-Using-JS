@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller Dashboard</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/seller.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../home.html"
+          ><img src="../imgs/home/logo.png" alt="E-commerce Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <!-- Hide Login and Register if user is logged in -->
+          <li id="Dashboard"><a href="#">Dashboard</a></li>
+          <li id="loginLink"><a href="./login.html">Login</a></li>
+          <li id="registerLink"><a href="./register.html">Register</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-bar"></div>
+
+      <div class="user-actions">
+        <a href="./wishList.html" id="wishList">
+          <img src="../imgs/home/wish.png" alt="wishList"
+        /></a>
+        <a href="./carts.html" id="cartCount"
+          ><img src="../imgs/home/carts1.png" alt="Cart"
+        /></a>
+        <!-- Display user name and profile picture if logged in -->
+        <div id="userProfile">
+          <a href="./profile.html"
+            ><img src="../imgs/home/profile.png" alt="Profile"
+          /></a>
+          <span id="userName"></span>
+        </div>
+        <!-- Logout button (hidden by default) -->
+        <button id="logoutButton" style="display: none">Logout</button>
+      </div>
+    </header>
+
+    <section class="seller-dashboard">
+      <h2 data-aos="fade-right" >Seller Dashboard</h2>
+
+      <!-- Tabs for Navigation -->
+      <div class="tabs">
+        <button class="tab-button active" data-tab="products" data-aos="fade-up-right">
+          Manage Products
+        </button>
+        <button class="tab-button" data-tab="orders" data-aos="fade-up-left">Manage Orders</button>
+      </div>
+
+      <!-- Products Tab -->
+      <div id="products" class="tab-content active">
+        <h3>Products</h3>
+        <div class="search-bar" data-aos="fade-down-left">
+          <input
+            type="text"
+            id="searchProductsInput"
+            placeholder="Search users..."
+          />
+          <button id="searchProductsButton">Search</button>
+          <button id="clearSearchP">Clear</button>
+          <!-- <button id="exportProductsButton" class="export-button">Export Products</button> -->
+        </div>
+        <button id="addProductButton" class="add-button" data-aos="fade-down-right">
+          Add New Product
+        </button>
+        <table  data-aos="zoom-in"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Stock</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="productsTableBody">
+            <!-- Products will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Orders Tab -->
+      <div id="orders" class="tab-content">
+        <h3>Orders</h3>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchOrdersInput"
+            placeholder="Search users..."
+          />
+          <button id="searchOrdersButton">Search</button>
+          <button id="clearSearchO">Clear</button>
+          <!-- <button id="exportOrdersButton" class="export-button">Export Orders</button> -->
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Customer</th>
+              <th>Products</th>
+              <th>Total Amount</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody">
+            <!-- Orders will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="../imgs/home/face.png" alt="Facebook" /></a>
+        <a href="#"><img src="../imgs/home/twitter.avif" alt="Twitter" /></a>
+        <a href="#"><img src="../imgs/home/insta.jpg" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2025 E-commerce Abdallah Ali Store. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+  // offset: 200,        // Distance (in px) from the viewport before the animation starts
+  duration: 1000,      // Animation duration in milliseconds
+  easing: "ease-in-out"});
+    </script>
+    <script src="../js/seller/Seller.js" type="module" defer></script>
+    <script src="../js/seller.js" type="module" defer></script>
+  </body>
+</html>

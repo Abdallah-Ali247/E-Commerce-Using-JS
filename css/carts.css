@@ -1,0 +1,154 @@
+/* Cart Section */
+.cart {
+  padding: 20px;
+  text-align: center;
+}
+
+.cart h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.cart-item-details h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-item-actions button {
+  padding: 5px 10px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cart-item-actions button:hover {
+  background-color: #e64a19;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-summary p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cart-summary button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-summary button:hover {
+  background-color: #555;
+}
+
+/* User Profile Section */
+#userProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#userProfile img {
+  height: 30px;
+}
+
+#userName {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Logout Button */
+#logoutButton {
+  padding: 5px 10px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#logoutButton:hover {
+  background-color: #e64a19;
+}
+/* Order Status */
+.order-status {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* Cart Actions */
+.cart-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cart-actions button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-actions button:hover {
+  background-color: #555;
+}
+
+#ToHistory {
+  background-color: #e64a19;
+}
+
+#ToHistory:hover {
+  background-color: #f16625;
+}

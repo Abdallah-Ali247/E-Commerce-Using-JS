@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - E-commerce Store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="../home.html"
+          ><img src="../imgs/home/logo.png" alt="E-commerce Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../html/products.html">Products</a></li>
+          <li id="Dashboard"><a href="#">Dashboard</a></li>
+          <li id="loginLink"><a href="../html/login.html">Login</a></li>
+          <li id="registerLink">
+            <a href="../html/register.html">Register</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search-bar"></div>
+      <div class="user-actions">
+        <a href="./wishList.html" id="wishList">
+          <img src="../imgs/home/wish.png" alt="wishList"
+        /></a>
+        <a href="../html/carts.html" id="cartCount"
+          ><img src="../imgs/home/carts1.png" alt="Cart"
+        /></a>
+        <div id="userProfile">
+          <a href="profile.html"
+            ><img src="../imgs/home/profile.png" alt="Profile"
+          /></a>
+          <span id="userName"></span>
+        </div>
+        <button id="logoutButton" style="display: none">Logout</button>
+      </div>
+    </header>
+
+    <!-- Admin Dashboard Section -->
+    <section class="admin-dashboard">
+      <h2>Admin Dashboard</h2>
+
+      <!-- Tabs for Navigation -->
+      <div class="tabs">
+        <button class="tab-button active" data-tab="users" data-aos="fade-right" data-aos-duration="1000">Manage Users</button>
+        <button class="tab-button" data-tab="products" data-aos="fade-up" data-aos-duration="1000">Manage Products</button>
+        <button class="tab-button" data-tab="orders" data-aos="fade-left" data-aos-duration="1000">Manage Orders</button>
+      </div>
+
+      <!-- Users Tab -->
+      <div id="users" class="tab-content active">
+        <h3>Users</h3>
+        <div class="search-bar" data-aos="fade-right" data-aos-duration="1000">
+          <input
+            type="text"
+            id="searchUsersInput"
+            placeholder="Search users..."
+          />
+          <button id="searchUsersButton">Search</button>
+          <button id="clearSearch">Clear</button>
+          <button id="exportUsersButton" class="export-button">
+            Export Users
+          </button>
+        </div>
+        <button id="addUserButton" class="add-button" data-aos="fade-down" data-aos-duration="1000">Add New User</button>
+        <table data-aos="fade-up" data-aos-duration="1000">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody">
+            <!-- Users will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Products Tab -->
+      <div id="products" class="tab-content">
+        <h3>Products</h3>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchProductsInput"
+            placeholder="Search products..."
+          />
+          <button id="searchProductsButton">Search</button>
+          <button id="clearSearchP">Clear</button>
+          <button id="exportProductsButton" class="export-button">
+            Export Products
+          </button>
+        </div>
+        <button id="addProductButton" class="add-button">
+          Add New Product
+        </button>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Stock</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="productsTableBody">
+            <!-- Products will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+       
+      <!-- Orders Tab -->
+      <div id="orders" class="tab-content">
+        <h3>Orders</h3>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchOrderInput"
+            placeholder="Search users..."
+          />
+          <button id="searchOrderButton">Search</button>
+          <button id="clearSearchO">Clear</button>
+          <button id="exportOrdersButton" class="export-button">
+            Export Orders
+          </button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Customer</th>
+              <th>Products</th>
+              <th>Total Amount</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="ordersTableBody">
+            <!-- Orders will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="../imgs/home/face.png" alt="Facebook" /></a>
+        <a href="#"><img src="../imgs/home/twitter.avif" alt="Twitter" /></a>
+        <a href="#"><img src="../imgs/home/insta.jpg" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2025 E-commerce Abdallah Ali Store. All rights reserved.</p>
+    </footer>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- JavaScript -->
+    <script src="../js/admin.js" type="module"></script>
+  </body>
+</html>

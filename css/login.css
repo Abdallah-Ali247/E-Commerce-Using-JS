@@ -1,0 +1,86 @@
+/* override home header style */
+body {
+  background-image: url("../imgs/home/cover1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav {
+  display: inline-block;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+/* Login Form */
+.login-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 6px 6px 10px 0px #ff562250;
+}
+
+.login-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-form button:hover {
+  background-color: #e64a19;
+}
+
+.login-form p {
+  margin-top: 15px;
+}
+
+.login-form a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}

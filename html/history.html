@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order History - E-commerce Store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/history.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Header (Same as Home Page) -->
+    <header>
+      <div class="logo">
+        <a href="../home.html"
+          ><img src="../imgs/home/logo.png" alt="E-commerce Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li id="loginLink"><a href="./login.html">Login</a></li>
+          <li id="registerLink"><a href="./register.html">Register</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="search_input" placeholder="Search products..." />
+        <button id="btn_search">Search</button>
+      </div>
+      <div class="user-actions">
+        <a href="./wishList.html" id="wishList">
+          <img src="../imgs/home/wish.png" alt="wishList"
+        /></a>
+        <a href="../html/carts.html" id="cartCount"
+          ><img src="../imgs/home/carts1.png" alt="Cart"
+        /></a>
+        <div id="userProfile">
+          <a href="./profile.html"
+            ><img src="../imgs/home/profile.png" alt="Profile"
+          /></a>
+          <span id="userName"></span>
+        </div>
+        <button id="logoutButton" style="display: none">Logout</button>
+      </div>
+    </header>
+
+    <!-- Order History Section -->
+    <section class="order-history">
+      <h2 data-aos="flip-left">Your Order History</h2>
+      <div class="order-list" id="orderList" data-aos="flip-up">
+        <!-- Orders will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Footer (Same as Home Page) -->
+    <footer>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="../imgs/home/face.png" alt="Facebook" /></a>
+        <a href="#"><img src="../imgs/home/twitter.avif" alt="Twitter" /></a>
+        <a href="#"><img src="../imgs/home/insta.jpg" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2025 E-commerce Abdallah Ali Store. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- JavaScript -->
+    <script src="../js/history.js" type="module"></script>
+  </body>
+</html>

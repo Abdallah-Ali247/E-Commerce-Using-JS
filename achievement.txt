@@ -1,0 +1,128 @@
+
+
+***************************** 1. DataBase *************************************************
+
+1. DataBase  (one file db.json)
+    1.1 one file db.json contain all DataBase
+    1.2 i tried to make a file for each end point but json-server watch only one end point
+
+---------------------------- 2. Home Page --------------------------------------------------
+
+2. Home page [home.html , home.css , home.js]
+
+    2.2 home page navbar  
+    2.3 featur product from `db`  
+    2.4 apply `add to carts` on featur products
+    2.4 display categories from `db` 
+    2.5 footer 
+    
+
+---------------------------- 3. product page ---------------------------------------------
+
+3. Product page [product.html , product.css, product.js, customSearch.js]
+
+    3.2 display `active` products from `db` using `js` 
+    3.3 create a button for each categories `db` 
+    3.4 filter products by categories button using `js`
+    3.5 create a custom search function using `js` 
+    3.6 display only products matchs user search
+    3.7 add filter by price for displayed cards
+    3.8 add function add products to carts
+    3.9 count number of added products 
+    
+
+----------------------------- 4. Carts page ---------------------------------------------
+4. Carts page [carts.html, carts.css, carts.js]
+
+    4.1 create cart for each user
+    4.2 display all products added to carts 
+    4.3 count number of added products
+    4.4 change products quantity 
+    4.5 remove product from cart using `js`
+    4.6 update total price of cart using `js`
+    
+-------------------------- 5. Module ----------------------------------------------
+5. convert js files to type Module to share some functions
+    5.1 create `utils.js` contains shared functions
+
+--------------------------- 6. register -----------------------------------------
+6. register user [register.html, register.css, register.js]
+
+    6.1 register new user (add new user to db json)
+    6.2 check if user email already exist in `db`
+    6.3 choose the role as a customer or seller
+
+--------------------------- 7. login ---------------------------------------------
+7. login user [login.html, login.css, login.js]
+
+    7.1 login with email and pass
+    7.2 check if user email and pass exist in `db`
+    7.3 check if user role is customer or seller
+    7.4 redirect to product page if user is customer
+    7.5 redirect to seller page if user is seller
+    7.6 redirect to admin page if user is admin
+    7.7 check if user is logged in or not
+    7.8 logout user
+
+
+--------------------------- 8. admin ----------------------------
+
+8. admin [admin.html , admin.css  , admin.js]
+    8.1. users management
+        1.1 edit user data [name, email, password, role] using sweet alert 
+        1.2 delete user (archive user : that mean to prevent it from using my site but keep it in db json)
+        1.3 add new user with its full data
+        1.4 admin can't see other admins data 
+        1.5 approveor reject new seller account register (when a seller register it keep pinding till admin admit it)
+    8.2. products management
+        2.1 approve or reject products created by seller
+        2.2 edit products data ["name","description","price","category","image","sellerId","stock","featured"] using sweet alert
+        2.3 delete product (archive product : that mean to hide it from my site but keep it in db json)
+    8.3. orders management
+        3.1 view all orders display names not id's
+        3.2 approve or reject orders
+        3.3 delete orders (archive order : that mean to remove it from site but keep in db json )
+
+    8.4. admin search 
+        4.1 search user
+        4.2 search product
+        4.3 search order
+    
+    8.5. admin reports
+        5.1 user report
+        5.2 product report
+        5.3 order report
+
+------------------------------ 9. seller page (OOP) ---------------------------
+
+9.seller [seller.html, seller.css, seller.js , 
+        seller/(order class, product class , utils class , Seller class)]
+    
+    1. add products
+    2. edit products
+    3. delete products (archive)
+    4. view products
+    5. view orders
+    6. update orders status
+    7. approve orders
+    8. search
+
+
+--------------------------- 10. customer functions ----------------------------
+10. customer
+    1. register
+    2. login
+    3. view products
+    4. add to cart
+    5. view cart
+    6. checkout
+    7. view orders
+    8. search products
+    10. track current order
+    11. history of his orders
+    12. review and rating
+-------------------------------      ------------------------------------------
+
+
+X=> profile 
+    update data and image

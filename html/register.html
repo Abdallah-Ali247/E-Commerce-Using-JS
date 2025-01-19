@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/register.css" />
+  </head>
+  <body>
+    <div class="register-container" data-aos="flip-left" data-aos-duration="800">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <div class="form-group" data-aos="zoom-in" data-aos-duration="1200">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group" data-aos="zoom-in" data-aos-duration="1400">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group" data-aos="zoom-in" data-aos-duration="1600">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group" data-aos="zoom-in" data-aos-duration="1800">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+        </div>
+        <div class="form-group" data-aos="zoom-in" data-aos-duration="2000">
+          <label for="role">Role:</label>
+          <select id="role" name="role" required>
+            <option value="customer">Customer</option>
+            <option value="seller">Seller</option>
+          </select>
+        </div>
+        <button type="submit" data-aos="zoom-in" data-aos-duration="2200">Register</button>
+      </form>
+      <p>Already have an account? <a href="./login.html">Login here</a>.</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../js/register.js" type="module"></script>
+  </body>
+</html>

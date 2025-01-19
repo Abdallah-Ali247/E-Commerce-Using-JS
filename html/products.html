@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - E-commerce Store</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="#"
+          ><img src="../imgs/home/logo.png" alt="E-commerce Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li id="Dashboard"><a href="#">Dashboard</a></li>
+          <li id="loginLink"><a href="./login.html">Login</a></li>
+          <li id="registerLink"><a href="./register.html">Register</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="search_input" placeholder="Search products..." />
+        <button id="btn_search">Search</button>
+      </div>
+      <div class="user-actions">
+        <a href="./wishList.html" id="wishList">
+          <img src="../imgs/home/wish.png" alt="wishList"
+        /></a>
+        <a href="./carts.html" id="cartCount"
+          ><img src="../imgs/home/carts1.png" alt="Cart"
+        /></a>
+        <!-- User profile section -->
+        <div id="userProfile">
+          <a href="profile.html"
+            ><img src="../imgs/home/profile.png" alt="Profile"
+          /></a>
+          <span id="userName"></span>
+        </div>
+        <!-- Logout button -->
+        <button id="logoutButton" style="display: none">Logout</button>
+      </div>
+    </header>
+
+    <!-- Price Filter Section -->
+    <section class="price-filter" data-aos="flip-left" data-aos-duration="1500">
+      <h2>Filter by Price</h2>
+      <div class="price-range">
+        <input type="number" id="min-price" placeholder="Min Price" min="0" />
+        <input type="number" id="max-price" placeholder="Max Price" min="0" />
+        <button id="btn_price_filter">Apply</button>
+      </div>
+    </section>
+
+    <div class="sideNav" data-aos="fade-left" data-aos-duration="1500">
+      <!-- Category Filter Section -->
+      <section class="category-filter">
+        <h2>Filter by Category</h2>
+        <div class="category-buttons">
+          <!-- Category buttons will be dynamically added here using JavaScript -->
+        </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="products" data-aos="zoom-in-left" data-aos-duration="1500">
+        <h2 id="cat_title">All Products</h2>
+        <div class="product-grid">
+          <!-- Products will be dynamically added here using JavaScript -->
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="../imgs/home/face.png" alt="Facebook" /></a>
+        <a href="#"><img src="../imgs/home/twitter.avif" alt="Twitter" /></a>
+        <a href="#"><img src="../imgs/home/insta.jpg" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2025 E-commerce Abdallah Ali Store. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- JavaScript -->
+    <script src="../js/search/customSearch.js" type="module" defer></script>
+    <script src="../js/products.js" type="module" defer></script>
+  </body>
+</html>

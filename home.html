@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Home</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <!-- site logo  -->
+      <div class="logo">
+        <a href="#"
+          ><img src="../imgs/home/logo.png" alt="E-commerce Logo"
+        /></a>
+      </div>
+
+      <!-- navbar -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./html/products.html">Products</a></li>
+          <li id="Dashboard"><a href="">Dashboard</a></li>
+          <!-- login & register  -->
+          <li id="loginLink"><a href="./html/login.html">Login</a></li>
+          <li id="registerLink"><a href="./html/register.html">Register</a></li>
+        </ul>
+      </nav>
+
+      <!-- search bar -->
+      <div class="search-bar">
+        <input type="text" id="search_input" placeholder="Search products..." />
+        <button id="btn_search">Search</button>
+      </div>
+
+      <!-- user section Carts , Profile -->
+      <div class="user-actions">
+        <a href="./html/wishList.html" id="wishList">
+          <img src="./imgs/home/wish.png" alt="wishList"
+        /></a>
+        <a href="./html/carts.html" id="cartCount">
+          <img src="../imgs/home/carts1.png" alt="Cart"
+        /></a>
+        <!-- display user info logged in -->
+        <div id="userProfile">
+          <a href="./html/profile.html"
+            ><img src="../imgs/home/profile.png" alt="Profile"
+          /></a>
+          <span id="userName"></span>
+        </div>
+        <!-- logout button displayed if user logged in -->
+        <button id="logoutButton" style="display: none">Logout</button>
+      </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero" data-aos="zoom-in"
+    data-aos-easing="linear"
+    data-aos-duration="600">
+      <div class="hero-content" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
+        <h1>Welcome to Our E-commerce Store</h1>
+        <p>Discover the best products at amazing prices.</p>
+        <a href="./html/products.html" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- carousel of only featured products -->
+    <section class="featured-products">
+      <h2 data-aos="fade-up" data-aos-duration="500">Featured Products</h2>
+      <div class="carousel" data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" data-aos-duration="500">
+        <!-- prev button  -->
+        <button class="carousel-button prev" id="prev"onclick="moveCarousel(-1)">
+          &#10094;
+        </button>
+        <div class="carousel-track">
+          <!-- fetch products from db.json using js -->
+        </div>
+        <!-- next button -->
+        <button class="carousel-button next" id="next" onclick="moveCarousel(1)">
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <!-- categories section -->
+    <section class="categories">
+      <h2 data-aos="flip-left" data-aos-duration="1000">Shop by Category</h2>
+      <div class="category-grid">
+        <!-- fetch cat from db -->
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer data-aos="zoom-in-down" data-aos-duration="1000">
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="./imgs/home/face.png" alt="Facebook" /></a>
+        <a href="#"><img src="./imgs/home/twitter.avif" alt="Twitter" /></a>
+        <a href="#"><img src="./imgs/home/insta.jpg" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2025 E-commerce Abdallah Ali Store. All rights reserved.</p>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+  // offset: 200,         // Distance (in px) from the viewport before the animation starts
+  duration: 1000,      // Animation duration in milliseconds
+  easing: "ease-in-out"});
+    </script>
+    <!-- home.js -->
+    <script src="../js/home.js" type="module" defer></script>
+  </body>
+</html>

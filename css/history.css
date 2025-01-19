@@ -1,0 +1,230 @@
+body {
+  background-color: #0000000d;
+}
+
+.order-history {
+  padding: 20px;
+  text-align: center;
+}
+
+.order-history h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-container {
+  width: 95%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.order-header {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.order-header p {
+  margin: 5px 0;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product-card {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.product-card img {
+  /* position: absolute;
+    top: 0;
+    left: 0; */
+  width: 90%;
+  height: 25%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+product-card .product-details {
+  text-align: left;
+}
+
+.product-details p {
+  margin: 5px 0;
+}
+
+.review-form {
+  margin-top: 10px;
+}
+
+.review-form label {
+  display: block;
+  margin-top: 5px;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.review-form button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background-color: #45a049;
+}
+
+.product-card:hover {
+  box-shadow: 5px 10px 13px 0px #201f1f61;
+}
+
+.order-header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.order-history {
+  overflow: hidden;
+}
+
+/* Submitted Review */
+.submitted-review {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  position: absolute;
+  bottom: 2%;
+  width: 80%;
+}
+
+.submitted-review p {
+  margin: 5px 0;
+}
+
+/* Order Container */
+.order-container {
+  width: 95%;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 25%);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.order-header {
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.order-header p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.order-header p strong {
+  color: #555;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+/* Review Form */
+.review-form {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.review-form input,
+.review-form textarea {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+  border-color: #ff5722;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 87, 34, 0.3);
+}
+
+.review-form button {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background-color: #e64a19;
+}
+
+/* Submitted Review */
+.submitted-review {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.submitted-review p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.submitted-review p strong {
+  color: #555;
+}

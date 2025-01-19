@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - E-commerce Store</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/carts.css" />
+  </head>
+  <body>
+    <!-- Header (Same as Home Page) -->
+    <header>
+      <div class="logo">
+        <a href="#"
+          ><img src="../imgs/home/logo.png" alt="E-commerce Logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li id="Dashboard"><a href="#">Dashboard</a></li>
+          <li id="loginLink"><a href="./login.html">Login</a></li>
+          <li id="registerLink"><a href="./register.html">Register</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" id="search_input" placeholder="Search products..." />
+        <button id="btn_search">Search</button>
+      </div>
+      <div class="user-actions">
+        <a href="./wishList.html" id="wishList">
+          <img src="../imgs/home/wish.png" alt="wishList"
+        /></a>
+        <a href="#" id="cartCount"
+          ><img src="../imgs/home/carts1.png" alt="Cart"
+        /></a>
+        <!-- User profile section -->
+        <div id="userProfile">
+          <a href="profile.html"
+            ><img src="../imgs/home/profile.png" alt="Profile"
+          /></a>
+          <span id="userName"></span>
+        </div>
+        <!-- Logout button -->
+        <button id="logoutButton" style="display: none">Logout</button>
+      </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart" >
+      <h2 data-aos="fade-up-left">Your Cart</h2>
+      <div class="cart-items" id="cartItemsContainer">
+        <!-- Cart items will be dynamically added here using JavaScript -->
+      </div>
+
+      <div class="cart-summary" data-aos="fade-up-right">
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button id="ToCheckout">Proceed to Checkout</button>
+        <button id="ToHistory">View History</button>
+      </div>
+    </section>
+
+    <!-- Footer (Same as Home Page) -->
+    <footer>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="../imgs/home/face.png" alt="Facebook" /></a>
+        <a href="#"><img src="../imgs/home/twitter.avif" alt="Twitter" /></a>
+        <a href="#"><img src="../imgs/home/insta.jpg" alt="Instagram" /></a>
+      </div>
+      <p>&copy; 2025 E-commerce Abdallah Ali Store. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+    // offset: 300,         // Distance (in px) from the viewport before the animation starts
+    duration: 1000,      // Animation duration in milliseconds
+    easing: "ease-in-out", // Animation easing (optional)
+    once: true,          // Whether the animation should happen only once
+    startEvent: "DOMContentLoaded", // Trigger animation on initial load
+  });
+    </script>
+    <!-- JavaScript -->
+    <script src="../js/carts.js" type="module" defer></script>
+  </body>
+</html>
