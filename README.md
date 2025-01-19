@@ -49,8 +49,7 @@ An advanced E-commerce platform supporting four user roles: Admin, Customer, Sel
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/E-commerce-Platform.git
-   cd E-commerce-Platform
+   git clone https://github.com/Abdallah-Ali247/E-Commerce-Using-JS.git
    ```
 2. Run `json-server` at port `3001`
      `json-server --watch .\dbjson\db.json --port 3001`
